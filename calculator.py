@@ -3,7 +3,6 @@ from time import sleep
 # calculator app terminal
 # Created By SMART
 
-sp = "Answer"
 
 # Description For User Display 
 description_app = """
@@ -60,8 +59,6 @@ def plus(x, y):
         print(f"Anwser:",z)
 
 
-
-
 # minus
 def minus(x, y):
         minus = x - y
@@ -71,7 +68,6 @@ def minus(x, y):
                 j = y
                 z = f"{i} - {j} = {minus}"
         print(f"Anwser:",z)
-
 
 
 # times
@@ -85,7 +81,6 @@ def times(x, y):
         print(f"Anwser:",z)
 
 
-
 # division
 def division(x, y):
         division = x % y
@@ -95,6 +90,7 @@ def division(x, y):
                 j = y
                 z = f"{i} % {j} = {division}"
         print(f"Anwser:",z)
+
 
 # Check user input
 def check_input(user_input):
