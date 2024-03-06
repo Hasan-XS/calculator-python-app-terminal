@@ -1,0 +1,4 @@
+Hello my friend, welcome to my terminal program, this is a calculator program, here you can do 4 operations!, which one do you want to do?
+
+
+What operation do you want to do?, According to the options above👆:
