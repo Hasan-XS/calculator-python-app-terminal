@@ -11,33 +11,33 @@ description_app = """
 |                                                   |
 | Hello My Friend!, welcome to my terminal program, |\n| nthis is a calculator program, here you can do    |\n| 4 operations! which one do you want to do? :      |
 |                                                   |
-| plus = +                                          | 
-| minus = -                                         |
-| times = *                                         |
-| division = %                                      |   
+| Addition = +                                      | 
+| Subtraction = -                                   |
+| Multiplication = *                                |
+| Division = %                                      |   
 |___________________________________________________|
 """
 
-description_plus = """
+description_addition = """
  ___________________________________________________
-|                   OPERATION: PLUS                 |
-|           Your chosen operation is plus!          |  
-|___________________________________________________|
-"""
-
-
-description_minus = """
- ___________________________________________________
-|                   OPERATION: MINUS                |
-|           Your chosen operation is minus!         |  
+|                   OPERATION: ADDITION             |
+|           Your chosen operation is addition!      |  
 |___________________________________________________|
 """
 
 
-description_times = """
+description_subtraction = """
  ___________________________________________________
-|                   OPERATION: TIMES                |
-|           Your chosen operation is times!         |  
+|               OPERATION: SUBTRACTION              |
+|         Your chosen operation is subtraction!     |  
+|___________________________________________________|
+"""
+
+
+description_multiplication = """
+ ___________________________________________________
+|             OPERATION: MULTIPLICATION             |
+|      Your chosen operation is Multiplication!     |  
 |___________________________________________________|
 """
 
@@ -48,59 +48,59 @@ description_division = """
 |___________________________________________________|
 """
 
-# plus
-def plus(x, y):
-        plus = int(x + y)
+# addition
+def addition(x, y):
+        addition = int(x + y)
         for i in str(x):
             i = x
             for j in str(y):
                 j = y
-                z = f"{i} + {j} = {plus}"
+                z = f"{i} + {j} = {addition}"
         print(f"Anwser:",z)
 
 
-# minus
-def minus(x, y):
-        minus = x - y
+# subtraction
+def subtraction(x, y):
+        subtraction = x - y
         for i in str(x):
             i = x
             for j in str(y):
                 j = y
-                z = f"{i} - {j} = {minus}"
+                z = f"{i} - {j} = {subtraction}"
         print(f"Anwser:",z)
 
 
-# times
-def times(x, y):
-        times = x * y
+# multiplication
+def multiplication(x, y):
+        multiplication = x * y
         for i in str(x):
             i = x
             for j in str(y):
                 j = y
-                z = f"{i} * {j} = {times}"
+                z = f"{i} * {j} = {multiplication}"
         print(f"Anwser:",z)
 
 
 # division
 def division(x, y):
-        division = x % y
+        division = x / y
         for i in str(x):
             i = x
             for j in str(y):
                 j = y
-                z = f"{i} % {j} = {division}"
+                z = f"{i} / {j} = {division}"
         print(f"Anwser:",z)
 
 
 # Check user input
 def check_input(user_input):
-    if user_input == "plus":
+    if user_input == "addition":
          sleep(1)
-         print(description_plus)
+         print(description_addition)
          number_x = int(input("""
           ____________________________
          |                            |
-         | Please enter the number:   |
+         | Enter your first number:   |
          |         Enter: """))
          print("""         ------------------------------""")
          
@@ -108,40 +108,40 @@ def check_input(user_input):
          number_y = int(input("""
           ____________________________
          |                            |
-         | Please enter the number:   |
+         | Enter your second number:  |
          |         Enter: """))
          print("""         ------------------------------""")
          sleep(0.5)
-         plus(number_x, number_y)
+         addition(number_x, number_y)
 
-    elif user_input == "minus":
+    elif user_input == "subtraction":
          sleep(1)
-         print(description_minus)
+         print(description_subtraction)
          sleep(1)
          number_x = int(input("""
           ____________________________
          |                            |
-         | Please enter the number:   |
+         | Enter your first number:   |
          |         Enter: """))
          print("""         ------------------------------""")
          
          number_y = int(input("""
           ____________________________
          |                            |
-         | Please enter the number:   |
+         | Enter your second number:  |
          |         Enter: """))
          print("""         ------------------------------""")
          sleep(0.5)
-         minus(number_x, number_y)
+         subtraction(number_x, number_y)
 
-    elif user_input == "times":
+    elif user_input == "multiplication":
          sleep(1)
-         print(description_times)
+         print(description_multiplication)
          sleep(1)
          number_x = int(input("""
           ____________________________
          |                            |
-         | Please enter the number:   |
+         | Enter your first number:   |
          |         Enter: """))
          print("""         ------------------------------""")
          
@@ -149,13 +149,12 @@ def check_input(user_input):
          number_y = int(input("""
           ____________________________
          |                            |
-         | Please enter the number:   |
+         | Enter your second number:  |
          |         Enter: """))
          print("""         ------------------------------""")
          sleep(0.5)
-         times(number_x, number_y)
+         multiplication(number_x, number_y)
          
-
     elif user_input == "division":
          sleep(1)
          print(description_division)
@@ -163,7 +162,7 @@ def check_input(user_input):
          number_x = int(input("""
           ____________________________
          |                            |
-         | Please enter the number:   |
+         | Enter your first number:   |
          |         Enter: """))
          print("""         ------------------------------""")
          
@@ -171,7 +170,7 @@ def check_input(user_input):
          number_y = int(input("""
           ____________________________
          |                            |
-         | Please enter the number:   |
+         | Enter your second number:  |
          |         Enter: """))
          print("""         ------------------------------""")
          sleep(0.5)
